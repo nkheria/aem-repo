@@ -12,11 +12,12 @@
   "scripts": {
     "dev": "webpack --env dev --config ./webpack.dev.js && clientlib --verbose",
     "prod": "webpack --config ./webpack.prod.js && clientlib --verbose",
-    "start": "webpack-dev-server --open --config ./webpack.dev.js",
     "sync": "aemsync -d -p ../ui.apps/src/main/content",
     "chokidar": "chokidar -c \"clientlib\" ./dist",
     "aemsyncro": "aemsync -w ../ui.apps/src/main/content",
-    "watch": "npm-run-all --parallel start chokidar aemsyncro"
+    "watch": "npm-run-all --parallel start chokidar aemsyncro",
+    "build": "react-scripts build && rm -rf ../target/classes/assets && mv build ../target/classes/assets",
+    "start": "react-scripts start"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -58,6 +59,7 @@
   "dependencies": {
     "create-react-app": "^5.0.1",
     "react-open-weather": "^1.3.8",
+    "react-scripts": "^5.0.1",
     "spa-react": "^0.0.6"
   },
   "browserslist": [

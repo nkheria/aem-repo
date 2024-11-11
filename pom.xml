@@ -1981,7 +1981,14 @@ Bundle-DocURL:
       
       </dependency>
                               
-      
+      <!-- https://mvnrepository.com/artifact/io.wcm/io.wcm.testing.aem-mock.junit5 -->
+<dependency>
+    <groupId>io.wcm</groupId>
+    <artifactId>io.wcm.testing.aem-mock.junit5</artifactId>
+    <version>5.5.0</version>
+    <scope>test</scope>
+</dependency>
+
       
       <dependency>
                                         
