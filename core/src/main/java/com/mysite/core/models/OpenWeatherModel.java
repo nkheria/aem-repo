@@ -2,7 +2,7 @@ package com.mysite.core.models;
 
 import com.adobe.cq.export.json.ComponentExporter;
 
-public interface OpenWeathermOdel extends ComponentExporter {
+public interface OpenWeatherModel extends ComponentExporter {
 
     public String getLabel();
     public double getLat();
